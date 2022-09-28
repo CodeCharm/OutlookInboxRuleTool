@@ -1,6 +1,8 @@
-﻿using Foundation;
+﻿using CodeCharm.OutlookInterop;
 
-namespace OutlookInterop
+using Foundation;
+
+namespace CodeCharm.OutlookInterop.Platforms.MacCatalyst
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

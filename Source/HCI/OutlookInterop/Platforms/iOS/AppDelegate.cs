@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace OutlookInterop
+namespace CodeCharm.OutlookInterop.Platforms.iOS
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

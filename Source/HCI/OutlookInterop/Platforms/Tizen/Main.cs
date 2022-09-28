@@ -3,7 +3,7 @@ using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace OutlookInterop
+namespace CodeCharm.OutlookInterop
 {
     internal class Program : MauiApplication
     {

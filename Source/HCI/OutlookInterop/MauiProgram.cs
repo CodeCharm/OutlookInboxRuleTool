@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace OutlookInterop
+namespace CodeCharm.OutlookInterop
 {
     public static class MauiProgram
     {
@@ -16,7 +16,7 @@ namespace OutlookInterop
                 });
 
 #if DEBUG
-		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

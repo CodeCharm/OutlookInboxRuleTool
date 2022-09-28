@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="OutlookInterop.AppShell"
+    x:Class="CodeCharm.OutlookInterop.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:OutlookInterop"
+    xmlns:local="clr-namespace:CodeCharm.OutlookInterop"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent

@@ -1,4 +1,4 @@
-﻿namespace OutlookInterop
+﻿namespace CodeCharm.OutlookInterop
 {
     public partial class App : Application
     {

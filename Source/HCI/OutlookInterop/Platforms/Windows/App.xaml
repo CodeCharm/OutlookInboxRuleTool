@@ -1,8 +1,8 @@
 ﻿<maui:MauiWinUIApplication
-    x:Class="OutlookInterop.WinUI.App"
+    x:Class="CodeCharm.OutlookInterop.WinUI.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:maui="using:Microsoft.Maui"
-    xmlns:local="using:OutlookInterop.WinUI">
+    xmlns:local="using:CodeCharm.OutlookInterop.WinUI">
 
 </maui:MauiWinUIApplication>

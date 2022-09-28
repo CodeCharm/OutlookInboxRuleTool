@@ -2,7 +2,7 @@
 
 using UIKit;
 
-namespace OutlookInterop
+namespace CodeCharm.OutlookInterop.Platforms.MacCatalyst
 {
     public class Program
     {

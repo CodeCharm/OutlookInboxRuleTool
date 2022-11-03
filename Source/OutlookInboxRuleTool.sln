@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutlookInterop.Tests", "Int
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookInboxRuleControls", "HCI\OutlookInboxRuleControls\OutlookInboxRuleControls.csproj", "{E1FC6CBA-4544-4F09-A295-71026C9F3C56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookInboxRuleViews", "HCI\OutlookInboxRuleViews\OutlookInboxRuleViews.csproj", "{4BE464D8-813B-49B5-8C2E-398D4E768478}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{E1FC6CBA-4544-4F09-A295-71026C9F3C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1FC6CBA-4544-4F09-A295-71026C9F3C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1FC6CBA-4544-4F09-A295-71026C9F3C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BE464D8-813B-49B5-8C2E-398D4E768478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BE464D8-813B-49B5-8C2E-398D4E768478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BE464D8-813B-49B5-8C2E-398D4E768478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BE464D8-813B-49B5-8C2E-398D4E768478}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{6B06D036-7FC8-4C93-9C27-28A74361795B} = {811B0419-A80F-47EC-8990-CC2F71458C56}
 		{9017CAD3-240F-4E67-AEDA-927B44390B02} = {6C6111FB-6694-4F3F-BE23-C9A9E77ECFE0}
 		{E1FC6CBA-4544-4F09-A295-71026C9F3C56} = {622746AC-D3B0-4BD3-942B-94E98B79B79D}
+		{4BE464D8-813B-49B5-8C2E-398D4E768478} = {622746AC-D3B0-4BD3-942B-94E98B79B79D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B980CB9-C217-48C1-A0F3-774747717811}

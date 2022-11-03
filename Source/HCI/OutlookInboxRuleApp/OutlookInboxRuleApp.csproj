@@ -81,6 +81,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Interop\OutlookInterop\OutlookInterop.csproj" />
+      <ProjectReference Include="..\OutlookInboxRuleControls\OutlookInboxRuleControls.csproj" />
     </ItemGroup>
 
 </Project>

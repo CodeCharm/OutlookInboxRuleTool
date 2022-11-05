@@ -1,11 +1,12 @@
-﻿namespace CodeCharm.OutlookInboxRuleApp;
-
-public partial class App : Application
+﻿namespace OutlookInboxRuleApp
 {
-    public App()
+    public partial class App : Application
     {
-        InitializeComponent();
+        public App()
+        {
+            InitializeComponent();
 
-        MainPage = new MainPage();
+            MainPage = new AppShell();
+        }
     }
 }

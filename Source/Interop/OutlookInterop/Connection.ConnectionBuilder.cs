@@ -17,7 +17,7 @@ namespace CodeCharm.OutlookInterop
 
             public IServiceCollection Services => _services;
 
-            public Connection Build()
+            public IConnection Build()
             {
                 return new Connection(Services);
             }

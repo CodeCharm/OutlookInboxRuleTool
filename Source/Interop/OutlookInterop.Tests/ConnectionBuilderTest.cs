@@ -7,12 +7,11 @@ using Xunit.Abstractions;
 namespace CodeCharm.OutlookInterop.Tests;
 
 public class ConnectionBuilderTest
+	: BaseTest
 {
-	private readonly IFeedback _feedback;
-
 	public ConnectionBuilderTest(ITestOutputHelper output)
+		: base(output)
 	{
-		_feedback = new Feedback(output);
 	}
 
 	[Fact]
@@ -23,13 +22,13 @@ public class ConnectionBuilderTest
 		
 		// act
 		var sut = builder
-			.WithFeedback(_feedback)
+			.WithFeedback(Feedback)
 			.Build();
 		sut.Connect();
-		var expected = sut.Application;
+		var expected = sut.Connected;
 
 		// assert
-		expected.Should().NotBeNull("An application object should have been returned");
+		expected.Should().BeTrue("An application object should have been returned");
 	}
 
 }

@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutlookInboxRuleViews", "HC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutlookInterop.Tests", "Interop\OutlookInterop.Tests\OutlookInterop.Tests.csproj", "{E1436353-8CB6-413C-BC28-CBBF87AFCF21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookInboxRuleApp", "HCI\OutlookInboxRuleApp\OutlookInboxRuleApp.csproj", "{60E87DEA-0901-42C6-861B-ECA1B7BC8F9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutlookInboxRuleApp", "HCI\OutlookInboxRuleApp\OutlookInboxRuleApp.csproj", "{60E87DEA-0901-42C6-861B-ECA1B7BC8F9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_cli", "_cli", "{774F5543-77B0-439B-8BA9-E118E416E9A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

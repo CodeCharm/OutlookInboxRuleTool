@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CodeCharm.OutlookInterop
+namespace CodeCharm.OutlookInterfaces
 {
     public interface IStores
         : IEnumerable<IStore>

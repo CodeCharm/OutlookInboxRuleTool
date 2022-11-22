@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Linq;
 
 using CodeCharm.Diagnostic;
+using CodeCharm.OutlookInterfaces;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Office.Interop.Outlook;
 
 using Exception = System.Exception;
 using OutlookApplication = Microsoft.Office.Interop.Outlook.Application;
@@ -115,5 +118,23 @@ namespace CodeCharm.OutlookInterop
             }
         }
 
+        public IStore PrimaryExchangeStore
+        {
+            get
+            {
+                var stores = Stores.Where(s => Microsoft.Office.Interop.Outlook.OlExchangeStoreType.olPrimaryExchangeMailbox == s.ExchangeStoreType);
+                var store = stores.Single();
+                return store;
+            }
+        }
+
+        public IStores AdditionalExchangeStores
+        {
+            get
+            {
+                var stores = Stores.Where(s => OlExchangeStoreType.olAdditionalExchangeMailbox == s.ExchangeStoreType);
+                return new Stores(stores);
+            }
+        }
     }
 }

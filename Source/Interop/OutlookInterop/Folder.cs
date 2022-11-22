@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
+using CodeCharm.OutlookInterfaces;
+
 using Microsoft.Office.Interop.Outlook;
 
 namespace CodeCharm.OutlookInterop

@@ -1,4 +1,4 @@
-﻿namespace CodeCharm.OutlookInterop
+﻿namespace CodeCharm.OutlookInterfaces
 {
     public interface IFolder
     {

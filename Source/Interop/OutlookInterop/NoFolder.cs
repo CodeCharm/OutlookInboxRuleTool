@@ -1,4 +1,6 @@
-﻿namespace CodeCharm.OutlookInterop
+﻿using CodeCharm.OutlookInterfaces;
+
+namespace CodeCharm.OutlookInterop
 {
     public class NoFolder
         : IFolder

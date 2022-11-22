@@ -1,4 +1,5 @@
 ﻿using CodeCharm.Diagnostic;
+using CodeCharm.OutlookInterfaces;
 
 using Microsoft.Extensions.DependencyInjection;
 

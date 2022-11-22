@@ -28,7 +28,7 @@ public class ConnectionBuilderTest
 		var expected = sut.Connected;
 
 		// assert
-		expected.Should().BeTrue("An application object should have been returned");
+		expected.Should().BeTrue("Connection should have been made");
 	}
 
 }

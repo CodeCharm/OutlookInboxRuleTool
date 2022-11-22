@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
+using CodeCharm.OutlookInterfaces;
+
 namespace CodeCharm.OutlookInterop
 {
     public class NoStores

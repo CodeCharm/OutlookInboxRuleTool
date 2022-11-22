@@ -1,5 +1,7 @@
 ﻿using System;
 
+using CodeCharm.OutlookInterfaces;
+
 using OutlookStore = Microsoft.Office.Interop.Outlook.Store;
 
 namespace CodeCharm.OutlookInterop
@@ -58,7 +60,7 @@ namespace CodeCharm.OutlookInterop
 
         //public string StoreID => throw new NotImplementedException();
 
-        //public Microsoft.Office.Interop.Outlook.OlExchangeStoreType ExchangeStoreType => throw new NotImplementedException();
+        public Microsoft.Office.Interop.Outlook.OlExchangeStoreType ExchangeStoreType => _store.ExchangeStoreType;
 
         //public string FilePath => throw new NotImplementedException();
 

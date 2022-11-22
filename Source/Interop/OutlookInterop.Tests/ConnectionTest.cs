@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 using CodeCharm.OutlookInterfaces;
 
 using Microsoft.Extensions.Logging;
+using Microsoft.Office.Interop.Outlook;
 
-using Xunit;
 using Xunit.Abstractions;
 
 namespace CodeCharm.OutlookInterop.Tests
 {
-    public class StoreTest
+    public class ConnectionTest
         : BaseTest
     {
         private readonly IConnection _sut;
 
-        public StoreTest(ITestOutputHelper output)
+        public ConnectionTest(ITestOutputHelper output)
             : base(output)
         {
             // arrange
@@ -28,38 +28,35 @@ namespace CodeCharm.OutlookInterop.Tests
                 .Build();
         }
 
+
         [Fact]
-        public void ListOfStoreNames()
+        public void GetPrimaryExchangeStore()
         {
             // arrange
 
             // act
-            var stores = _sut.Stores;
+            var store = _sut.PrimaryExchangeStore;
 
             // assert
-            stores.Should().NotBeEmpty("Must have at least one store");
-            foreach (var store in stores)
-            {
-                Feedback.LogDebug(store.DisplayName);
-            }
+            store.Should().NotBeNull();
+            Feedback.LogDebug(store.DisplayName);
         }
 
 
         [Fact]
-        public void ListOfStoreExchangeTypes()
+        public void GetAdditionalExchangeStores()
         {
             // arrange
 
             // act
-            var stores = _sut.Stores;
+            var stores = _sut.AdditionalExchangeStores;
 
             // assert
+            stores.Should().NotBeEmpty();
             foreach (var store in stores)
             {
-                Feedback.LogDebug($"Store {store.DisplayName}: ExchangeType = {store.ExchangeStoreType}");
+                Feedback.LogDebug($"Store: {store.DisplayName}");
             }
-
         }
-
     }
 }

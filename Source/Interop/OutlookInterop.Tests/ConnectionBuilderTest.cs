@@ -8,7 +8,7 @@ namespace CodeCharm.OutlookInterop.Tests;
 
 public class ConnectionBuilderTest
 {
-	private readonly Feedback _feedback;
+	private readonly IFeedback _feedback;
 
 	public ConnectionBuilderTest(ITestOutputHelper output)
 	{

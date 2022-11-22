@@ -9,7 +9,7 @@ using OutlookNameSpace = Microsoft.Office.Interop.Outlook.NameSpace;
 
 namespace CodeCharm.OutlookInterop
 {
-    public class Connection
+    public partial class Connection
     {
         private readonly IFeedback _feedback;
         private OutlookApplication _application;
@@ -51,29 +51,6 @@ namespace CodeCharm.OutlookInterop
                 }
 
                 return true;
-            }
-        }
-
-        public class ConnectionBuilder
-        {
-            private readonly IServiceCollection _services;
-
-            internal ConnectionBuilder()
-            {
-                _services = new ServiceCollection();
-            }
-
-            public IServiceCollection Services => _services;
-
-            public Connection Build()
-            {
-                return new Connection(Services);
-            }
-
-            public ConnectionBuilder WithFeedback(IFeedback feedback)
-            {
-                _services.AddSingleton(feedback);
-                return this;
             }
         }
 

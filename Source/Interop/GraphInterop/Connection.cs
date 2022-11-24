@@ -124,5 +124,24 @@ namespace CodeCharm.GraphInterop
                 }
             }
         }
+
+        public async Task<MessageRuleCollectionResponse> GetInboxRules()
+        {
+            using (var _ = _feedback.BeginScope(nameof(GetInboxRules)))
+            {
+                if (AutoConnect())
+                {
+                    return await _client
+                        .Me
+                        .MailFolders["inbox"]
+                        .MessageRules
+                        .GetAsync();
+                }
+                else
+                {
+                    return await Task.FromResult((MessageRuleCollectionResponse)null);
+                }
+            }
+        }
     }
 }

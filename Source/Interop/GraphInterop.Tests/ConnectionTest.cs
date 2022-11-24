@@ -31,4 +31,18 @@ public class ConnectionTest
         //});
         //Feedback.LogInformation(serializedMe);
     }
+
+
+    [Fact]
+    public async void GetInboxRules()
+    {
+        // arrange
+
+        // act
+        var rules = await _sut.GetInboxRules();
+
+        // assert
+        rules.Should().NotBeNull();
+        rules.Value.Should().NotBeNullOrEmpty();
+    }
 }

@@ -10,6 +10,7 @@ namespace CodeCharm.OutlookInterfaces
     public interface IGraphSession
         : IConnection
     {
+        Task<MessageRuleCollectionResponse> GetInboxRules();
         Task<User> GetMeAsync();
     }
 }

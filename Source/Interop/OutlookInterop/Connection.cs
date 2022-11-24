@@ -15,7 +15,7 @@ using OutlookNameSpace = Microsoft.Office.Interop.Outlook.NameSpace;
 namespace CodeCharm.OutlookInterop
 {
     public partial class Connection
-        : IConnection
+        : IOutlookSession
     {
         private readonly IFeedback _feedback;
         private OutlookApplication _application;
@@ -40,7 +40,7 @@ namespace CodeCharm.OutlookInterop
             {
                 if (null != _application)
                 {
-                    _feedback.LogWarning("Outlook Application is already connected");
+                    _feedback.LogInformation("Outlook Application is already connected");
                     return true;
                 }
 

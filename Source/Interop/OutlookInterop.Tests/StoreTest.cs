@@ -16,7 +16,7 @@ namespace CodeCharm.OutlookInterop.Tests
     public class StoreTest
         : BaseTest
     {
-        private readonly IConnection _sut;
+        private readonly IOutlookSession _sut;
 
         public StoreTest(ITestOutputHelper output)
             : base(output)

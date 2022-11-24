@@ -37,6 +37,7 @@
 			<EmbedInteropTypes>True</EmbedInteropTypes>
 			<Private>True</Private>
 		</COMReference>
+		<PackageReference Include="Microsoft.Graph.Beta" Version="5.13.0-preview" />
 	</ItemGroup>
 
 </Project>

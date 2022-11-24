@@ -38,7 +38,12 @@ namespace CodeCharm.Test.Diagnostic
 
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
-            _output.WriteLine($"Level: {logLevel}; ID: {eventId}; {formatter(state, exception)}");
+            var message = formatter(state, exception);
+            if (null != exception)
+            {
+                message = $"{message}; Exception: {exception.Message}";
+            }
+            _output.WriteLine($"Level: {logLevel}; ID: {eventId}; {message}");
         }
 
         public class FeedbackScope<TState>

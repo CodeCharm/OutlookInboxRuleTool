@@ -25,10 +25,10 @@ public class ConnectionBuilderTest
 			.WithFeedback(Feedback)
 			.Build();
 		sut.Connect();
-		var expected = sut.Connected;
+		var actual = sut.Connected;
 
 		// assert
-		expected.Should().BeTrue("Connection should have been made");
+		actual.Should().BeTrue("Connection should have been made");
 	}
 
 }

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<AssemblyName>CodeCharm.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>CodeCharm.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Azure.Identity" Version="1.8.0" />
+		<PackageReference Include="Microsoft.Graph.Beta" Version="5.13.0-preview" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Diagnostic\Diagnostic\Diagnostic.csproj" />
+		<ProjectReference Include="..\OutlookInterfaces\OutlookInterfaces.csproj" />
+	</ItemGroup>
+
+</Project>
